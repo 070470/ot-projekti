@@ -1,7 +1,5 @@
-# Markdown-hommia
+# Yatzy-sovellusprojekti
+Tämä sovellus on virtuaaliversio klassisesta Yatzy-noppapelistä.
 
-Tässä vähän tekstiä, joka sisältää **lihavoituja** ja *kursivoituja* osuuksia.
-
-[gitlog.txt](https://github.com/070470/ot-projekti/blob/main/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/070470/ot-projekti/blob/main/laskarit/viikko1/komentorivi.txt)
+## Dokumentaatio
+- [Määrittelydokumentti](https://github.com/070470/ot-projekti/blob/main/dokumentaatio/vaatimusmaarittely.md)
