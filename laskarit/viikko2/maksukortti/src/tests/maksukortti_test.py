@@ -4,9 +4,19 @@ from maksukortti import Maksukortti
 class TestMaksukortti(unittest.TestCase):
 	def setUp(self):
 		self.kortti = Maksukortti(1000)
+	
+	def test_saldo_alussa_oikein(self):
+		return None
+
+	def test_lataaminen_kasvattaa_saldoa_oikein(self):
+		self.kortti.lataa_rahaa(200)
+		self.assertEqual(str(self.kortti), "Kortilla on rahaa 12.00 euroa")
+
+	def test_saldo_vahenee_oikein(self):
+		self.kortti()
 
 	def test_konstruktori_asettaa_saldon_oikein(self):
-        	self.assertEqual(str(self.kortti), "Kortilla on rahaa 10.00 euroa")
+		self.assertEqual(str(self.kortti), "Kortilla on rahaa 10.00 euroa")
 
 	def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
 		self.kortti.syo_edullisesti()
@@ -51,7 +61,6 @@ class TestMaksukortti(unittest.TestCase):
 		kortti.syo_edullisesti()
 
 		self.assertEqual(str(kortti), "Kortilla on rahaa 0.00 euroa")
-
 
 	def test_tasarahalla_voi_syödä_maukkaasti(self):
 		kortti = Maksukortti(400)
