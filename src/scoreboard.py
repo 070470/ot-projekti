@@ -1,5 +1,8 @@
-from player import Player
+from game import Game
 
+# Make a dictionary with the names of different dice
+# combinations as keys, scores of players will be stored
+# here
 combos = dict.fromkeys(("Ones", "Twos", "Threes", "Fours",
           "Fives", "Sixes", "Bonus", "Pair", 
           "2Pairs", "3K", "4K", "SS", "LS", "FH",
@@ -14,5 +17,4 @@ class Scoreboard:
             combos[combo][0] = score
         else:
             combos[combo][1] = score
-
     
