@@ -9,8 +9,10 @@ class Scoreboard:
     def __init__(self, sheet):
         self.sheet = sheet
     
-    def update_score(self, score, player, combo):
+    def update_scoreboard(self, score, player, combo):
         if player=="user1":
             combos[combo][0] = score
         else:
             combos[combo][1] = score
+
+    
