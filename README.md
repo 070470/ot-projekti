@@ -9,7 +9,7 @@ Tämä sovellus on virtuaaliversio klassisesta Yatzy-noppapelistä.
 - Ohjelmointia ei vielä aloitettu, tehtäviin kului ~ 2 tuntia
 
 ### Viikko 2
-- Työhön kului ~ 2 tuntia, tehtäviin 
+- Työhön kului ~ 2 tuntia
 
 ### Viikko 3
 - Työhön kului ~ 6 tuntia
