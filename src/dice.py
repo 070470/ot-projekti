@@ -1,9 +1,10 @@
+import pygame
 from game import Game
 from scoreboard import Scoreboard
 import random as ran
 
-class Dice:
-    def __init__(self, toss):
+class Dice(pygame.sprite.Sprite):
+    def __init__(self, x=0, y=0):
         self.toss = toss
 
     def keepDice(self, toss):
