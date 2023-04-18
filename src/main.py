@@ -31,8 +31,9 @@ while running:
         pygame.draw.rect(screen, (245, 211, 39), startBtn)
         btnText = font.render("Start a game", True, (31, 45, 94))
         screen.blit(btnText, (365, 263))
+    if state == "game":
+        break
 
     pygame.display.flip()
-    running = False
 
 pygame.quit()
