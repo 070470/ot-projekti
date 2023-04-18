@@ -3,15 +3,9 @@ Tämä sovellus on virtuaaliversio klassisesta Yatzy-noppapelistä.
 
 ## Dokumentaatio
 - [Määrittelydokumentti](https://github.com/070470/ot-projekti/blob/main/dokumentaatio/vaatimusmaarittely.md)
+- [Tuntikirjanpito](https://github.com/070470/ot-projekti/blob/main/dokumentaatio/tuntikirjanpito.md)
+- [Changelog](https://github.com/070470/ot-projekti/blob/main/dokumentaatio/changelog.md)
 
-## Työtuntikirjanpito
-### Viikko 1
-- Ohjelmointia ei vielä aloitettu, tehtäviin kului ~ 2 tuntia
-
-### Viikko 2
-- Työhön kului ~ 2 tuntia
-
-### Viikko 3
-- Työhön kului ~ 6 tuntia
-
-### Projektiin käytetyt työtunnit yhteensä: 8
+## Ohjelman asennus ja suorittaminen
+1. Asenna riippuvuudet komennolla `poetry install`
+2. Suorita komento `poetry run python3 main.py`src -hakemistossa.

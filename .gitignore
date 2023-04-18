@@ -2,6 +2,5 @@
 __pycache__
 .coverage
 htmlcov
-poetry.lock
-pyproject.toml
 venv/
+testi/
