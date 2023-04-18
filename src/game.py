@@ -3,11 +3,9 @@ from tkinter import *
 from dice import Dice
 
 class Game:
-    def __init__(self, player1, player2, currentPlayer):
+    def __init__(self, player1, player2):
         self.player1 = player1
-        self.player2 = player2
-        self.currentPlayer = currentPlayer
-        
+        self.player2 = player2      
 
     def beginGame(self, player1, player2):
         pass

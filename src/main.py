@@ -33,5 +33,6 @@ while running:
         screen.blit(btnText, (365, 263))
 
     pygame.display.flip()
+    running = False
 
 pygame.quit()
