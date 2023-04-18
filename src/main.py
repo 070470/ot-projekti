@@ -1,17 +1,37 @@
-from game import Game
-from scoreboard import Scoreboard
 from tkinter import *
+import pygame
 
-# Create main GUI window
-root = Tk()
-root.title("Yatzy")
-root.geometry("350x200")
+# Create game window
+pygame.init()
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("YATZY!")
+font = pygame.font.Font("Kanit-Regular.ttf", 20)
+screen.fill((109, 164, 247))
 
-btnStart = Button(root, text = "Start a new game",
-             command = Game.beginGame)
+# Create buttons for the main screen
+startBtn = pygame.Rect(350, 250, 140, 55)
 
-btnSwitch = Button(root, text = "End turn", 
-            command = Game.turnSwitch(Game.getPlayer))
+# Define game state
+state = "menu"
 
+pygame.display.flip()
 
-root.mainloop()
+# Game loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            if startBtn.collidepoint(event.pos):
+                    state = "game"
+
+    # Draw the menu screen
+    if state == "menu":
+        pygame.draw.rect(screen, (245, 211, 39), startBtn)
+        btnText = font.render("Start a game", True, (31, 45, 94))
+        screen.blit(btnText, (365, 263))
+
+    pygame.display.flip()
+
+pygame.quit()
